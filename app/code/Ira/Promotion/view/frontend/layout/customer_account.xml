@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" label="Customer My Account (All Pages)" design_abstraction="custom">
+    <body>
+            <referenceBlock name="customer_account_navigation">
+                    <block name="customer-account-promotion-link" class="Magento\Customer\Block\Account\SortLinkInterface" after="customer-account-navigation-account-link">
+                        <arguments>
+                            <argument name="label" xsi:type="string" translate="true">Promotion</argument>
+                            <argument name="path" xsi:type="string">promotion</argument>
+                            <argument name="sortOrder" xsi:type="number">235</argument>
+                        </arguments>
+                    </block>
+            </referenceBlock>
+
+    </body>
+</page>

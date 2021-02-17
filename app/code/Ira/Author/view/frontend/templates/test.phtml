@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @var $block Ira\Author\Block\Author
+ */
+?>
+
+<!--<h1 style="color: red; text-align: center">Authors</h1>-->
+
+    <?php
+        $id = $block->getParam();
+        echo ' <div class="container__all">';
+        if (is_null($id)) {
+            $authors = $block->getAuthors();
+            foreach ($authors as $author) {
+                echo '
+            <div class="author_container">
+                <div class="author_item">
+                <a href=" ' . $block->getUrl('authors/index/index/id/' . $author->getId()) . '">
+                    <img class="author_portrait" src=" ' . $author->getImageUrls() . ' ">         
+                </a> 
+                    <h5 class="author_name">  ' . $author->getName() . ' </h5>          
+                </div>
+            </div>
+            ';
+            }
+        } else {
+            $author = $block->getAuthors();
+            echo '
+                <div class="author_container">
+                    <h2 class="author_name">  ' . $author->getName() . ' </h2>
+                    <img class="author_portrait" src=" ' . $author->getImageUrls() . ' ">
+                    <p class="author_bio"> ' . $author->getBio() . ' </p>
+                </div>';
+        };
+    echo ' </div>';?>
+
+
+

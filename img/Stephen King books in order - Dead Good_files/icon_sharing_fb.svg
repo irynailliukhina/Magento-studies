@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icon_sharing_fb</title>
+    <desc>Created with Sketch.</desc>
+    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sharingPanel320">
+            <g id="icon_sharing_fb">
+                <g>
+                    <path d="M16.5,33 C25.6127143,33 33,25.6127143 33,16.5 C33,7.38728571 25.6127143,0 16.5,0 C7.38728571,0 0,7.38728571 0,16.5 C0,25.6127143 7.38728571,33 16.5,33" id="Fill-21" fill="#3A579A"></path>
+                    <path d="M17.6241308,16 L20.6476951,16 L21,12.6248551 L20.2953902,12.6248551 L17.984548,12.6248551 L17.9833891,11.4345138 C17.9833891,10.6312943 17.9022663,10.3751449 18.7494206,10.3751449 L21,10.3751449 L21,7 L18.7494206,7 C15.7884368,7 14.2494206,8.64005151 14.2494206,11.1482292 L14.2494206,11.4171281 L14.2494206,12.6248551 L12,12.6248551 L12,16 L14.2494206,16 L14.2494206,25 L14.2969354,25 L17.6241308,25 L17.6241308,19.3751449 L17.6241308,16.07302 L17.6241308,16 Z" id="Fill-22" fill="#FFFFFE"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

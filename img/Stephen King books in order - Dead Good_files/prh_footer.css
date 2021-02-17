@@ -1,0 +1,390 @@
+/* SPECIFIC BOOTSTRAP STYLES */
+
+footer {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+footer:after,
+footer:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+footer * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+footer *:after,
+footer *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+footer .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:768px) {
+    footer .container {
+        width: 750px
+    }
+}
+
+@media (min-width:992px) {
+    footer .container {
+        width: 970px
+    }
+}
+
+@media (min-width:1200px) {
+    footer .container {
+        width: 1170px
+    }
+}
+
+
+
+footer .container:after,
+footer .container:before,
+footer .row:after,
+footer .row:before {
+    display: table;
+    content: " "
+}
+
+footer .container:after,
+footer .row:after {
+    clear: both
+}
+
+footer .row {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+footer .col-lg-1,
+footer .col-lg-10,
+footer .col-lg-11,
+footer .col-lg-12,
+footer .col-lg-2,
+footer .col-lg-3,
+footer .col-lg-4,
+footer .col-lg-5,
+footer .col-lg-6,
+footer .col-lg-7,
+footer .col-lg-8,
+footer .col-lg-9,
+footer .col-md-1,
+footer .col-md-10,
+footer .col-md-11,
+footer .col-md-12,
+footer .col-md-2,
+footer .col-md-3,
+footer .col-md-4,
+footer .col-md-5,
+footer .col-md-6,
+footer .col-md-7,
+footer .col-md-8,
+footer .col-md-9,
+footer .col-sm-1,
+footer .col-sm-10,
+footer .col-sm-11,
+footer .col-sm-12,
+footer .col-sm-2,
+footer .col-sm-3,
+footer .col-sm-4,
+footer .col-sm-5,
+footer .col-sm-6,
+footer .col-sm-7,
+footer .col-sm-8,
+footer .col-sm-9,
+footer .col-xs-1,
+footer .col-xs-10,
+footer .col-xs-11,
+footer .col-xs-12,
+footer .col-xs-2,
+footer .col-xs-3,
+footer .col-xs-4,
+footer .col-xs-5,
+footer .col-xs-6,
+footer .col-xs-7,
+footer .col-xs-8,
+footer .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+
+footer .col-xs-1,
+footer .col-xs-10,
+footer .col-xs-11,
+footer .col-xs-12,
+footer .col-xs-2,
+footer .col-xs-3,
+footer .col-xs-4,
+footer .col-xs-5,
+footer .col-xs-6,
+footer .col-xs-7,
+footer .col-xs-8,
+footer .col-xs-9 {
+    float: left
+}
+
+footer .col-xs-12 {
+    width: 100%
+}
+
+footer .col-xs-11 {
+    width: 91.66666667%
+}
+
+footer .col-xs-10 {
+    width: 83.33333333%
+}
+
+footer .col-xs-9 {
+    width: 75%
+}
+
+footer .col-xs-8 {
+    width: 66.66666667%
+}
+
+footer .col-xs-7 {
+    width: 58.33333333%
+}
+
+footer .col-xs-6 {
+    width: 50%
+}
+
+footer .col-xs-5 {
+    width: 41.66666667%
+}
+
+footer .col-xs-4 {
+    width: 33.33333333%
+}
+
+footer .col-xs-3 {
+    width: 25%
+}
+
+footer .col-xs-2 {
+    width: 16.66666667%
+}
+
+footer .col-xs-1 {
+    width: 8.33333333%
+}
+
+
+@media (min-width:768px) {
+    footer .col-sm-1,
+    footer .col-sm-10,
+    footer .col-sm-11,
+    footer .col-sm-12,
+    footer .col-sm-2,
+    footer .col-sm-3,
+    footer .col-sm-4,
+    footer .col-sm-5,
+    footer .col-sm-6,
+    footer .col-sm-7,
+    footer .col-sm-8,
+    footer .col-sm-9 {
+        float: left
+    }
+    footer .col-sm-12 {
+        width: 100%
+    }
+    footer .col-sm-11 {
+        width: 91.66666667%
+    }
+    footer .col-sm-10 {
+        width: 83.33333333%
+    }
+    footer .col-sm-9 {
+        width: 75%
+    }
+    footer .col-sm-8 {
+        width: 66.66666667%
+    }
+    footer .col-sm-7 {
+        width: 58.33333333%
+    }
+    footer .col-sm-6 {
+        width: 50%
+    }
+    footer .col-sm-5 {
+        width: 41.66666667%
+    }
+    footer .col-sm-4 {
+        width: 33.33333333%
+    }
+    footer .col-sm-3 {
+        width: 25%
+    }
+    footer .col-sm-2 {
+        width: 16.66666667%
+    }
+    footer .col-sm-1 {
+        width: 8.33333333%
+    }
+
+}
+
+@media (min-width:992px) {
+    footer .col-md-1,
+    footer .col-md-10,
+    footer .col-md-11,
+    footer .col-md-12,
+    footer .col-md-2,
+    footer .col-md-3,
+    footer .col-md-4,
+    footer .col-md-5,
+    footer .col-md-6,
+    footer .col-md-7,
+    footer .col-md-8,
+    footer .col-md-9 {
+        float: left
+    }
+    footer .col-md-12 {
+        width: 100%
+    }
+    footer .col-md-11 {
+        width: 91.66666667%
+    }
+    footer .col-md-10 {
+        width: 83.33333333%
+    }
+    footer .col-md-9 {
+        width: 75%
+    }
+    footer .col-md-8 {
+        width: 66.66666667%
+    }
+    footer .col-md-7 {
+        width: 58.33333333%
+    }
+    footer .col-md-6 {
+        width: 50%
+    }
+    footer .col-md-5 {
+        width: 41.66666667%
+    }
+    footer .col-md-4 {
+        width: 33.33333333%
+    }
+    footer .col-md-3 {
+        width: 25%
+    }
+    footer .col-md-2 {
+        width: 16.66666667%
+    }
+    footer .col-md-1 {
+        width: 8.33333333%
+    }
+}
+
+
+
+
+
+
+
+/** FOOTER STYLES **/
+footer.prh-footer {
+    background-color:#000000;
+    border-top:8px solid #FF642C;
+    font-size:10px;
+    font-family:'Arial'!important;
+}
+
+footer.prh-footer p {
+    margin-bottom:0px;
+    margin-top:0;
+    line-height:16px;
+    font-family:'Arial'!important;
+}
+
+footer.prh-footer .logo-row p {
+    color:#fff;
+    font-size:10px;
+}
+
+footer.prh-footer a {
+    text-decoration: none;
+    font-family:'Arial'!important;
+}
+
+footer.prh-footer .copyright-row p a {
+    color: #fff;
+}
+
+footer.prh-footer .logo-row p a {
+    color: #ff6602;
+}
+
+footer.prh-footer .logo-row .logo-text {
+    padding-top:5px;
+    padding-left:0px;
+    text-align: left;
+}
+
+footer.prh-footer .copyright-row {
+    padding-bottom:7px;
+}
+
+
+
+footer.prh-footer .copyright-row p {
+    color: #646466;
+    font-size:10px;
+    text-align: left;
+}
+
+footer.prh-footer .logo-row {
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+footer.prh-footer .logo-row .col-xs-4 {
+    text-align: left;
+}
+
+footer.prh-footer .logo-row img {
+    max-width:77px;
+}
+
+@media (min-width:768px) {
+    footer.prh-footer .copyright-col-wrap {
+        text-align: right;
+    }
+    footer.prh-footer .copyright-row {
+        padding-top: 15px;
+        padding-bottom:20px;
+    }
+    footer.prh-footer .copyright-row p {
+        text-align: right;
+    }
+}
+
+@media (min-width:1200px) {
+    footer.prh-footer .copyright-row {
+        padding-top:15px;
+    }
+    footer.prh-footer {
+        font-size:12px;
+    }
+}

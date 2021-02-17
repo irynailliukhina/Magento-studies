@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @var $block Ira\Promotion\Block\Promotion
+ */
+
+?>
+<div>
+<?php
+ $this->getLayout()
+    ->createBlock('Magento\Cms\Block\Block')
+    ->setBlockId('promo')
+    ->toHtml();
+?>
+</div>
+
+<div class="container">
+    <div class="form-container">
+        <p class="form__subscribe"><label  for="subscribe"><?= $block->escapeHtml(__('Refer a friend using this unique link:')) ?></label></p>
+        <form class="form">
+            <label class="form__input-label">
+                <input type="email" class="form__input" id="subscribe"/>
+            </label>
+            <button class="form__submit" type="button">Copy</button>
+        </form>
+        <p class="form__subscribe"><?= $block->escapeHtml(__('Share your unique link on social')) ?></p>
+        <div class="icons">
+            <div class="icons__fb">
+                <a href="fb.com">
+                    <img src="app/code/Ira/Promotion/view/frontend/web/images/fb.svg" alt="icon">
+                </a>
+            </div>
+            <div class="icons__tw">
+                <a href="tw.com">
+    `
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="statistic">
+        <div class="statistic__earned">
+            <div class="statistic__amount"><?= $block->earn ?><?= $block->escapeHtml(__('$')) ?></div>
+            <div class="statistic__desc"><?= $block->escapeHtml(__('EARNED')) ?></div>
+        </div>
+         <div class="statistic__more">
+             <div class="statistic__header"><?= $block->escapeHtml(__('Your Achievements')) ?></div>
+
+            <div class="statistic__item">
+                <div class="statistic__label"><?= $block->escapeHtml(__('Referral Link Clicks')) ?></div>
+                <div class="statistic__variable"><?= $block->clicks ?></div>
+            </div>
+            <div class="statistic__item">
+                <div class="statistic__label"><?= $block->escapeHtml(__('Referral Pending')) ?></div>
+                <div class="statistic__variable"><?= $block->pending ?></div>
+            </div>
+            <div class="statistic__item">
+                <div class="statistic__label"><?= $block->escapeHtml(__('Referral Approved')) ?></div>
+                <div class="statistic__variable"><?= $block->approved ?></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

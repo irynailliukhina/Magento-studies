@@ -1,0 +1,37 @@
+<?php
+/** @var $block Magento\Checkout\Block\Onepage\Success
+ */
+?>
+
+<div class="confirm">
+    <div class="confirm__circle">
+        <div class="confirm__line"></div>
+    </div>
+    <h3 class="confirm__header"><?= $block->escapeHtml(__('ORDER CONFIRMATION')) ?></h3>
+    <p class="confirm__desc"><?= $block->escapeHtml(__('Thank you for shopping')) ?></p>
+    <?php if ($block->getOrderId()):?>
+        <?php if ($block->getCanViewOrder()) :?>
+            <p><?= __('Order Number: %1.', sprintf('<a href="%s" class="order-number"><strong>%s</strong></a>', $block->escapeHtml($block->getViewOrderUrl()), $block->escapeHtml($block->getOrderId()))) ?></p>
+        <?php  else :?>
+            <p><?= __('Order Number: <span>%1</span>.', $block->escapeHtml($block->getOrderId())) ?></p>
+        <?php endif;?>
+    <?php endif;?>
+</div>
+
+<div class="cards-container">
+    <div class="cards__item">
+        <div class="cards__title"><?= $block->escapeHtml(__('ORDER DETAILS')) ?></div>
+        <div class="cards__desc"><?= $block->escapeHtml(__('Your order will be delivered within 1-2 days. Please make sure that you have entered your complete address and correct contact details, as this will reduce any potential delays in your shipment.')) ?></div>
+    </div>
+    <a href="<?php $block->getUrl('promotion')?>" class="cards__item">
+        <div class="cards__title"><?= $block->escapeHtml(__('INVITE FRIENDS, GET REWARDS!')) ?></div>
+        <div class="cards__desc"><?= $block->escapeHtml(__('100$ Store Credit for you, 100$ Store Credit for your friend. Tell your friends to enter your coupon checkout and they will receive 30% off their first purchase.')) ?></div>
+    </a>
+
+</div>
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+        <!--
+        /**
+        * Vaimo Author
+        *
+        * @author Iryna Illiukhina iryna.illiukhina@vaimo.com
+        * @package Ira_Brand
+        * @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
+        */
+        -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="ira_author" frontName="authors">
+            <module name="Ira_Author" />
+        </route>
+    </router>
+</config>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+        /**
+        * Ira Promotion
+        *
+        * @promotion Iryna Illiukhina iryna.illiukhina@vaimo.com
+        * @package Ira_Promotion
+        * @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
+        */
+        -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account"/>
+    <head>
+        <title>Promotion</title>
+    </head>
+    <body>
+        <referenceBlock name="page.main.title" remove="true" />
+        <referenceContainer name="content">
+            <block class="Magento\Cms\Block\Block" name="promo" before="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">promo</argument>
+                </arguments>
+            </block>
+            <block
+                    class="Ira\Promotion\Block\Promotion"
+                    name="Promotion"
+                    template="Ira_Promotion::promotion.phtml"
+                    cacheable="false">
+            </block>
+<!--            <block-->
+<!--                    class="Ira\Promotion\Block\Promotion"-->
+<!--                    name="Success"-->
+<!--                    template="Ira_Promotion::success.phtml"-->
+<!--                    cacheable="false">-->
+<!--            </block>-->
+            <block
+                    class="Ira\Author\Block\Author"
+                    name="authors_test"
+                    template="Ira_Author::test.phtml"
+                    cacheable="false">
+            </block>
+        </referenceContainer>
+
+    </body>
+
+
+</page>

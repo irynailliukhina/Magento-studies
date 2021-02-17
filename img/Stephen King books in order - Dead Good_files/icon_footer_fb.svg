@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icon_social_fb</title>
+    <desc>Created with Sketch.</desc>
+    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer" transform="translate(-1177.000000, -21.000000)">
+            <g id="Group-10">
+                <g>
+                    <g id="Group-9">
+                        <g id="Group-7" transform="translate(1178.000000, 22.000000)">
+                            <g id="icon_social_fb">
+                                <circle id="Oval-10" stroke="#F60505" cx="17" cy="17" r="17"></circle>
+                                <path d="M20.7165992,14.2336001 L17.6038368,14.2336001 L17.6038368,12.8442345 C17.6038368,12.1907586 18.0370563,12.0383295 18.3419145,12.0383295 L20.5211399,12.0383295 L20.5211399,9.16332739 L17.3638887,9.15384615 C14.4998264,9.15384615 13.957208,11.2966052 13.957208,12.6691963 L13.957208,14.2328707 L11.7692308,14.2328707 L11.7692308,17.1501738 L13.957208,17.1501738 L13.957208,25.9020829 L17.6038368,25.9020829 L17.6038368,17.1501738 L20.4124703,17.1501738 L20.7165992,14.2336001 L20.7165992,14.2336001 Z" id="Shape" fill="#FFFFFF"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
