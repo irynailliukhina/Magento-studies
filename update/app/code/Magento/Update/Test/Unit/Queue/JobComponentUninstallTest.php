@@ -36,11 +36,11 @@ class JobComponentUninstallTest extends \PHPUnit_Framework_TestCase
         $this->composerApp->expects($this->at(0))
             ->method('runComposerCommand')
             ->with(['command' => 'remove', 'packages' => ['vendor/package'], '--no-update' => true])
-            ->willReturn('Success');
+            ->willReturn('success');
         $this->composerApp->expects($this->at(1))
             ->method('runComposerCommand')
             ->with(['command' => 'update'])
-            ->willReturn('Success');
+            ->willReturn('success');
         $jobComponentUninstall->execute();
     }
 
@@ -76,7 +76,7 @@ class JobComponentUninstallTest extends \PHPUnit_Framework_TestCase
         $this->composerApp->expects($this->at(0))
             ->method('runComposerCommand')
             ->with(['command' => 'remove', 'packages' => ['vendor/package'], '--no-update' => true])
-            ->willReturn('Success');
+            ->willReturn('success');
         $this->composerApp->expects($this->at(1))
             ->method('runComposerCommand')
             ->with(['command' => 'update'])

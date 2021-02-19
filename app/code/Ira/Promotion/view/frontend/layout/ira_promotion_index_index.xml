@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <!--
-        /**
-        * Ira Promotion
-        *
-        * @promotion Iryna Illiukhina iryna.illiukhina@vaimo.com
-        * @package Ira_Promotion
-        * @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
-        */
-        -->
+/**
+* Ira Promotion
+*
+* @author Iryna Illiukhina iryna.illiukhina@vaimo.com
+* @package Ira_Promotion
+* @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
+*/
+-->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <update handle="customer_account"/>
     <head>
@@ -24,20 +24,17 @@
             <block
                     class="Ira\Promotion\Block\Promotion"
                     name="Promotion"
-                    template="Ira_Promotion::promotion.phtml"
-                    cacheable="false">
+                    template="Ira_Promotion::promotion.phtml">
             </block>
-<!--            <block-->
-<!--                    class="Ira\Promotion\Block\Promotion"-->
-<!--                    name="Success"-->
-<!--                    template="Ira_Promotion::success.phtml"-->
-<!--                    cacheable="false">-->
-<!--            </block>-->
+            <block
+                    class="Ira\promotion\Block\promotion"
+                    name="success"
+                    template="Ira_Promotion::success.phtml">
+            </block>
             <block
                     class="Ira\Author\Block\Author"
                     name="authors_test"
-                    template="Ira_Author::test.phtml"
-                    cacheable="false">
+                    template="Ira_Author::test.phtml">
             </block>
         </referenceContainer>
 

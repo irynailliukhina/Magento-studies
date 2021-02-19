@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
-        <!--
-        /**
-        * Promotion Module
-        *
-        * @promotion Illiukhina Iryna iryna.illiukhina@vaimo.com
-        * @package Promotion Module
-        * @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
-        */
-        -->
+<!--
+/**
+* Ira Promotion
+*
+* @author Iryna Illiukhina iryna.illiukhina@vaimo.com
+* @package Ira_Promotion
+* @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
+*/
+-->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Module/etc/module.xsd">
-<module name="Ira_Promotion" setup_version="1.0.0"/>
+<module name="Ira_Promotion" setup_version="1.0.1"/>
     <sequence>
         <module name="Magento_Catalog"/>
     </sequence>

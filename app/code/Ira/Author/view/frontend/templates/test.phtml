@@ -1,3 +1,25 @@
+<script type="text/x-magento-init">
+    {
+        "#authors-header": {
+            "Ira_Author/js/authors-header": {
+                "newHeader": "Authors we have in our shop"
+            }
+        }
+    }
+</script>
+<script type="text/x-magento-init">
+    {
+     "#accordion": {
+            "accordion": {
+                "active": [],
+                "collapsible": true,
+                "openedState": "active",
+                "multipleCollapsible": false
+            }
+        }
+     }
+</script>
+
 <?php
 
 /**
@@ -5,21 +27,23 @@
  */
 ?>
 
-<!--<h1 style="color: red; text-align: center">Authors</h1>-->
+
+<h1 id="authors-header"></h1>
 
     <?php
         $id = $block->getParam();
-        echo ' <div class="container__all">';
+        echo ' <div class="container__all" id="accordion">';
         if (is_null($id)) {
             $authors = $block->getAuthors();
             foreach ($authors as $author) {
                 echo '
             <div class="author_container">
-                <div class="author_item">
-                <a href=" ' . $block->getUrl('authors/index/index/id/' . $author->getId()) . '">
-                    <img class="author_portrait" src=" ' . $author->getImageUrls() . ' ">         
-                </a> 
-                    <h5 class="author_name">  ' . $author->getName() . ' </h5>          
+                <div class="author_item" data-role="collapsible">
+                    <h5 class="author_name" data-role="title">  ' . $author->getName() . ' </h5>  
+                    <a data-role="content" href=" ' . $block->getUrl('authors/index/index/id/' . $author->getId()) . '">
+                        <img class="author_portrait" src=" ' . $block->getViewFileUrl($author->getImageUrls()) . ' ">         
+                    </a> 
+                            
                 </div>
             </div>
             ';
@@ -29,10 +53,10 @@
             echo '
                 <div class="author_container">
                     <h2 class="author_name">  ' . $author->getName() . ' </h2>
-                    <img class="author_portrait" src=" ' . $author->getImageUrls() . ' ">
+                    <img class="author_portrait" src=" ' . $block->getViewFileUrl($author->getImageUrls()) . ' ">
                     <p class="author_bio"> ' . $author->getBio() . ' </p>
                 </div>';
-        };
+        }
     echo ' </div>';?>
 
 

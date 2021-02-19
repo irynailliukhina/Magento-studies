@@ -1,13 +1,14 @@
 <?xml version="1.0"?>
 <!--
-        /**
-        * Vaimo Author
-        *
-        * @author Iryna Illiukhina iryna.illiukhina@vaimo.com
-        * @package Ira_Brand
-        * @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
-        */
-        -->
+/**
+* Ira Author
+*
+* @author Iryna Illiukhina iryna.illiukhina@vaimo.com
+* @package Ira_Author
+* @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
+*/
+-->
+
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <title>Authors</title>
@@ -18,8 +19,7 @@
             <block
                     class="Ira\Author\Block\Author"
                     name="authors_test"
-                    template="Ira_Author::test.phtml"
-                    cacheable="true">
+                    template="Ira_Author::test.phtml">
             </block>
         </referenceContainer>
     </body>

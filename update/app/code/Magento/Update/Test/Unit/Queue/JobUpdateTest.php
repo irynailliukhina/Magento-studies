@@ -45,11 +45,11 @@ class JobUpdateTest extends \PHPUnit_Framework_TestCase
         $this->composerApp->expects($this->at(0))
             ->method('runComposerCommand')
             ->with(['command' => 'require', 'packages' => ['vendor/package 1.0'], '--no-update' => true])
-            ->willReturn('Success');
+            ->willReturn('success');
         $this->composerApp->expects($this->at(1))
             ->method('runComposerCommand')
             ->with(['command' => 'update'])
-            ->willReturn('Success');
+            ->willReturn('success');
         $this->queue->expects($this->once())->method('addJobs')->with([['name' => 'setup:upgrade', 'params' => []]]);
         $jobUpdate->execute();
     }
@@ -89,7 +89,7 @@ class JobUpdateTest extends \PHPUnit_Framework_TestCase
         $this->composerApp->expects($this->at(0))
             ->method('runComposerCommand')
             ->with(['command' => 'require', 'packages' => ['vendor/package 1.0'], '--no-update' => true])
-            ->willReturn('Success');
+            ->willReturn('success');
         $this->composerApp->expects($this->at(1))
             ->method('runComposerCommand')
             ->with(['command' => 'update'])

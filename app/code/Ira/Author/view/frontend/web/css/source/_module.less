@@ -11,15 +11,37 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  align-items: center;
 }
 .author_item{
-  max-width: 700px;
+  max-width: 300px;
 
+}
+.active{
+  border: #0b2e13 2px solid;
+  box-sizing: border-box;
+}
+.author_name{
+  padding: 20px;
+  background-color: lightgrey;
+  text-align: center;
+  margin-top: 0;
+
+
+  &:hover{
+    background-color: lightblue;
+    cursor: pointer;
+  }
 }
 a{
   width: 100%;
+  display: flex;
 }
 img{
-  width: 300px;
+  width: 100px;
   height: auto;
+}
+#authors-header{
+  color: red;
+  text-align: center;
 }

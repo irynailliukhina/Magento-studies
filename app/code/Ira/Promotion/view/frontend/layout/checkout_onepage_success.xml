@@ -1,9 +1,12 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
+* Ira Promotion
+*
+* @author Iryna Illiukhina iryna.illiukhina@vaimo.com
+* @package Ira_Promotion
+* @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
+*/
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
@@ -14,8 +17,7 @@
             <block
                 class="Magento\Checkout\Block\Onepage\Success"
                 name="Success"
-                template="Ira_Promotion::success.phtml"
-                cacheable="false">
+                template="Ira_Promotion::success.phtml">
             </block>
         </referenceContainer>
     </body>

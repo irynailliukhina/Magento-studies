@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-        <!--
-        /**
-        * Author Module
-        *
-        * @author Illiukhina Iryna iryna.illiukhina@vaimo.com
-        * @package Author Module
-        * @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
-        */
-        -->
+<!--
+/**
+* Ira Author
+*
+* @author Iryna Illiukhina iryna.illiukhina@vaimo.com
+* @package Ira_Author
+* @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
+*/
+-->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Module/etc/module.xsd">
 <module name="Ira_Author" setup_version="2.0.0"/>
