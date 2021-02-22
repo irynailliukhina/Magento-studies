@@ -1,47 +1,32 @@
 .author_container{
   max-width: 400px;
   display: flex;
-  align-items: center;
   flex-direction: column;
   margin: 0 auto;
   gap: 30px;
   flex-wrap: wrap;
 }
+
 .container__all{
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .author_item{
   max-width: 300px;
 
 }
-.active{
-  border: #0b2e13 2px solid;
-  box-sizing: border-box;
-}
+
 .author_name{
-  padding: 20px;
+  padding: @gap;
   background-color: lightgrey;
   text-align: center;
-  margin-top: 0;
+}
 
-
-  &:hover{
-    background-color: lightblue;
-    cursor: pointer;
-  }
-}
-a{
-  width: 100%;
-  display: flex;
-}
-img{
-  width: 100px;
-  height: auto;
-}
 #authors-header{
+  margin: 20px auto;
   color: red;
   text-align: center;
 }

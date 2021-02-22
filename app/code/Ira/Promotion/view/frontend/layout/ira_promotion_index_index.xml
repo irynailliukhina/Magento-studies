@@ -27,7 +27,7 @@
                     template="Ira_Promotion::promotion.phtml">
             </block>
             <block
-                    class="Ira\promotion\Block\promotion"
+                    class="Ira\Promotion\Block\Promotion"
                     name="success"
                     template="Ira_Promotion::success.phtml">
             </block>

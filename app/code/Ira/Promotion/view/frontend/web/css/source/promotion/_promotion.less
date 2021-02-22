@@ -1,74 +1,130 @@
-.container{
+@gap: 20px;
+@height: 32px;
+@violet: #3233cc;
+
+.container {
   display: flex;
   gap: 30px;
-  &_header{
-    padding: 20px;
+
+  &_header {
+    padding: @gap;
     border: 1px #f5f5f5 solid;
-    margin-bottom: 20px;
+    margin-bottom: @gap;
   }
 }
-.form{
+
+.form {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: @gap;
 
-  &__input{
-    width: 100%;
+  &__input {
   }
-  &__input-label{
 
+  &__input-label {
+    flex-grow: 1;
+    margin-right: 10px;
   }
-  &-container{
+
+  &-container {
     border: 1px #f5f5f5 solid;
     padding: 40px 30px;
-    flex-grow: 1;
   }
-  &__subscribe{
+  &-wrapper{
+    width: 50%;
+  }
+
+  &__subscribe {
     font-size: 0.9em;
     margin: 10px 0;
   }
-  &__submit{
+
+  &__submit {
     color: white;
     text-transform: uppercase;
     background-color: black;
     border: none;
-    height: 32px;
+    height: @height;
     border-radius: 0;
-    margin-left: 10px;
+
+
+    &:hover, &:focus, &:active{
+      border: none;
+      background-color: @violet;
+      color: white;
+    }
   }
 }
-.promo_header{
+
+.promo_header {
   text-align: center;
   font-weight: bold;
   font-size: 1em;
 }
-.promo_info{
+
+.promo_info {
   text-align: center;
   font-size: 0.8em;
 }
-.statistic{
-  flex-grow: 1;
-  &__earned{
-    padding: 20px 26px;
+
+.statistic {
+  width: 50%;
+  &__earned {
+    padding: @gap 26px;
     color: white;
-    background-color: #3233cc;
+    background-color: @violet;
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
+    margin: auto 0;
   }
-  &__item{
-    padding: 20px 26px;
+
+  &__item {
+    padding: @gap 26px;
     display: flex;
     justify-content: space-between;
   }
-  &__amount{
+
+  &__amount {
     font-weight: bold;
   }
-  &__more{
-    margin-top: 20px;
+
+  &__more {
+    margin-top: @gap;
     border: 1px #f5f5f5 solid;
   }
-  &__header{
-    padding: 20px;
+
+  &__header {
+    padding: @gap;
     font-weight: bold;
+    &--mob {
+      display: none;
+    }
   }
 }
+
+.icons{
+  display: flex;
+}
+
+.icon-img{
+  height: @height;
+  width: @height;
+  margin: 20px 10px 20px 0 ;
+
+  &:hover{
+    background-color: #5bc0de;
+  }
+}
+.icon-link{
+}
+.cms{
+
+  &_header{
+    display: none;
+  }
+
+  &_text{
+    display: none;
+  }
+}
+

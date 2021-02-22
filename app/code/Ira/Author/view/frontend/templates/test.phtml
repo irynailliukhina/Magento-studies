@@ -32,15 +32,15 @@
 
     <?php
         $id = $block->getParam();
-        echo ' <div class="container__all" id="accordion">';
+        echo ' <div class="container__all" >';
         if (is_null($id)) {
             $authors = $block->getAuthors();
             foreach ($authors as $author) {
                 echo '
             <div class="author_container">
-                <div class="author_item" data-role="collapsible">
-                    <h5 class="author_name" data-role="title">  ' . $author->getName() . ' </h5>  
-                    <a data-role="content" href=" ' . $block->getUrl('authors/index/index/id/' . $author->getId()) . '">
+                <div class="author_item">
+                    <h5 class="author_name">  ' . $author->getName() . ' </h5>  
+                    <a href=" ' . $block->getUrl('authors/index/index/id/' . $author->getId()) . '">
                         <img class="author_portrait" src=" ' . $block->getViewFileUrl($author->getImageUrls()) . ' ">         
                     </a> 
                             

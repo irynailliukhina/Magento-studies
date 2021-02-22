@@ -4,4 +4,7 @@ define(['jquery'], function ($){
     return function (config, element){
         $(element).text(config.newHeader)
     }
+
 })
+
+console.log("element");
